@@ -1,9 +1,12 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        int bankBalance = 500;
-        bankBalance = bankBalance + 250;
-        bankBalance = bankBalance - 100;
-        System.out.println(bankBalance);
+        int day;
+        String month;
+
+        day = 30;
+        month = "November";
+        System.out.println("My birthday is on the " + day + "th of " + month + ".");
+
 
         // this is a one line comment
 
