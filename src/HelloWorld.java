@@ -1,17 +1,11 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        int day;
-        String month;
+        String firstName = "Zbyszek";
+        String lastName = "Bulecki";
+        String fullName = firstName + " " + lastName;
 
-        day = 30;
-        month = "November";
-        System.out.println("My birthday is on the " + day + "th of " + month + ".");
-
-
-        // this is a one line comment
-
-        /* This is a multiple line comment
-        it just goes on and on and on and on.
-         */
+        System.out.println("Hello, my name is " + fullName + ".");
+        int lettersInName = firstName.length() + lastName.length();
+        System.out.println("There are " + lettersInName + " of letters in my name.");
     }
 }
