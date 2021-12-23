@@ -1,16 +1,15 @@
 public class HelloWorld {
     public static void main(String[] args) {
 
-      int time = 18;
-      String timeOfDay;
+      int dayOfTheWeek = 5;
+      boolean holiday;
 
-      if (time >= 5 && time < 12) {
-          timeOfDay = "morning";
-        } else if (time >= 12 && time < 20) {
-          timeOfDay = "daytime";
-        } else timeOfDay = "night";
-      
-      System.out.println(timeOfDay);
+      if (dayOfTheWeek >= 1 && dayOfTheWeek < 6) {
+          holiday = true;
+          if (!holiday) {
+              System.out.println("Sleep in!");
+          } else System.out.println("Wake up at 7:00.");
+        }
 
     }
 }
