@@ -1,13 +1,16 @@
 public class HelloWorld {
     public static void main(String[] args) {
 
-      boolean isSnowing = false;
-      boolean isRaining = true;
-      double temperature = 60;
+      int time = 18;
+      String timeOfDay;
 
-      if (isRaining || isSnowing || temperature < 50) {
-          System.out.println("Let's stay at home.");
-          } else System.out.println("Let's go out!");
+      if (time >= 5 && time < 12) {
+          timeOfDay = "morning";
+        } else if (time >= 12 && time < 20) {
+          timeOfDay = "daytime";
+        } else timeOfDay = "night";
+      
+      System.out.println(timeOfDay);
 
     }
 }
