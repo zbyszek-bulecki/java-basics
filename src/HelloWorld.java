@@ -1,9 +1,19 @@
 public class HelloWorld {
     public static void main(String[] args) {
-       double fahrenheit = 66.2;
-       double celsius = (fahrenheit - 32.0) *5.0 /9.0;
 
-       System.out.println(celsius);
+        boolean canSeePlayer = true;
+        boolean playerPoweredUp = false;
+
+        if (canSeePlayer) {
+            if (!playerPoweredUp) {
+                System.out.println("Attack!");
+            } else {
+                System.out.println("Run away!");
+            }
+        } else {
+            System.out.println("Wander.");
+        }
+
 
     }
 }
