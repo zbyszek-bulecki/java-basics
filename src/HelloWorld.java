@@ -1,19 +1,13 @@
 public class HelloWorld {
     public static void main(String[] args) {
 
-        boolean canSeePlayer = true;
-        boolean playerPoweredUp = false;
+      boolean isSnowing = false;
+      boolean isRaining = true;
+      double temperature = 60;
 
-        if (canSeePlayer) {
-            if (!playerPoweredUp) {
-                System.out.println("Attack!");
-            } else {
-                System.out.println("Run away!");
-            }
-        } else {
-            System.out.println("Wander.");
-        }
-
+      if (isRaining || isSnowing || temperature < 50) {
+          System.out.println("Let's stay at home.");
+          } else System.out.println("Let's go out!");
 
     }
 }
